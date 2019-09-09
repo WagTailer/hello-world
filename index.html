@@ -1,1 +1,683 @@
-<h1> Hi world</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<title>Главная страница</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="icon" href="/images/favicon.png" type="image/png"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/calc.css" rel="stylesheet" type="text/css"/>
+<link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+<link href="css/input.css" rel="stylesheet" type="text/css"/>
+<link href="css/modal.css" rel="stylesheet" type="text/css"/>
+<link href="css/animate.css" rel="stylesheet" type="text/css"/>
+<link href="css/flaticon.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+<link href="css/1style.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script><script src="js/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/calc.js"></script>
+<body>
+<div class="none">
+	<div id="login">
+		<div style="padding:30px 25px;">
+			<h3 class='modal-title'>Вход в личный <span> кабинет  <i></i></span></h3>
+			<div>
+				<div class="clearfix"></div>
+				<br/>
+				<script language='javascript'>
+                  function checklogin() {   
+                    if (document.loginform.username.value=='') {
+                      alert("Please enter your username!");
+                      document.loginform.username.focus();
+                      return false;
+                    }
+                    if (document.loginform.password.value=='') {
+                      alert("Please enter your password!");
+                      document.loginform.password.focus();
+                      return false;
+                    }
+                    return true;
+                  }
+                  </script>
+				 <form class='form-modal'  method="POST" action="/login/">
+				
+					<input type='hidden' name='a' value='do_login'>
+					<input type='hidden' name='follow' value=''>
+					<div class="field" style='width:80%; margin-left:20%;'>
+						<label>
+						<span>ЛОГИН</span>
+						<input class="inpts" name="user" type="text" placeholder="">
+						</label>
+					</div>
+					<div class="field">
+						<label>
+						<span>ПАРОЛЬ</span>
+						<input class="inpts" name="pass" id="pass" type="password" placeholder="">
+						<div class="clearfix"></div>
+						</label>
+					</div>
+					<center>
+					<div class="field" style='padding:0 10px;'>
+						
+						<div class="submit" style='float:right;'>
+							<input type='submit' value="Вход"></div>
+					</div>
+					</center>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="cert">
+		<div>
+			<img src="images/cert2.png" alt="">
+		</div>
+	</div>
+</div>
+<div class='wrapper'>
+	<section class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 ">
+				<div class="logo">
+					 <a href="/"></a> 
+					<img src="/logo.png" style="
+    height: 90px;
+    position: relative;
+    top: -216px;
+    left: -95px;
+">
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class='header-nav-inset'>
+					<div class="header-top-line">
+						<div class="social-links">
+
+								<a href="https://vk.com/club185638432" target="_blank"><img src="/vk.png" style="
+    position: relative;
+    top: 15px;
+"></a>
+
+<a href="https://t.me/" target="_blank"><img src="/instagram.png" style="
+    position: relative;
+    top: 15px;
+"></a>
+
+							<!-- <a href="https://twitter.com/Eth_Mining" target="_blank" class="tw"><span></span></a>
+							<a href="https://plus.google.com/u/0/104217844456960746104" target="_blank" class="skype"><span></span></a> -->
+						</div>
+						<div style="display: inline-block;padding-top: 10px;margin-left: 25px;">
+							
+							<div style="display: inline;float: right;margin-left: 10px;margin-top:5px;color:lightgray;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif">
+									
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+						<!-- <div class="phone-block">
+							<i></i>
+							<span>+44</span>
+							<small>20</small>
+						</div> -->
+						<div class="phone-block block-mail">
+							<i></i>
+							<a>support<abbr>@</abbr>favorit-sports.pro</a>
+						</div>
+					</div>
+					<div class="header-menu">
+						<ul>
+							<li><a href="/">Главная</a></li>
+						<li><a href="/about">О Нас</a></li>
+						<li><a href="/news">Новости</a></li>
+						<li><a href="/rules">Правила</a></li>
+						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/contacts">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<style>
+					a ,input {
+						outline: none;
+					}
+				</style>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6" style=" margin-left:13.33%">
+				<div class="block-header-title">
+					<h1>
+					<small>Добро пожаловать в</small>
+					<span>Favorit Sports</span>
+					</h1>
+					<p>
+						 Ставки на спорт!
+					</p>
+				</div>
+			</div>
+			<div class="col-md-2">
+							<div class="block-btns-group">
+					
+<a href="/registration" class="btn"><i></i><span>Регистрация</span></a>
+					<a class="btn box-modal" data-width='450' rel="login"><i></i><span>Авторизация</span></a>
+				</div>
+							</div>
+		</div>
+	</div>
+	</section>
+	
+<section class="main1">
+
+
+
+
+
+
+<section class="live_stat">
+			<div class="container">
+				<ul class="clearfix">
+					<li class="stat_1">
+						<div class="icon"><span></span></div>
+						<div class="title">Всего инвестиций</div>
+						<div class="subtitle"> 443575.97 RUB</div>
+					</li>
+					<li class="stat_2">
+						<div class="icon"><span></span></div>
+						<div class="title">Работает с:</div>
+						<div class="subtitle">19.08.2019</div>
+					</li>
+					<li class="stat_3">
+						<div class="icon"><span></span></div>
+						<div class="title">Выплачено:</div>
+						<div class="subtitle">274151.34 RUB</div>
+					</li>
+					<li class="stat_4">
+						<div class="icon"><span></span></div>
+						<div class="title">Пользователей:</div>
+						<div class="subtitle">163</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+<center><h2 style="
+    margin-top: 90px;
+    font-size: 35px;
+    letter-spacing: 7px;
+    font-weight: 500;
+">Инвестиционные планы</h2></center>
+
+
+    <div class="container" style="
+    margin-top: 73px;
+">
+        <div class="row">
+            
+
+			  
+
+			  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+			 <div class="col-md-2 contarif" style="
+    width: 20%;
+">
+                <div class="advent-block viravn-cen advent-block-bor">
+                    <ul>
+                        <li>
+                            <h3>9% за 3 дня</h3>
+
+                            <span>3%
+                                                    <h4>
+                                                        в день                                                     </h4></span>
+
+                            <p>Мин. сумма: 100 руб</p>
+                            <p>Макс. сумма:: 1000 руб</p>
+                                                                                            <p>Срок депозита: 3 дня</p>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+			
+			<div class="col-md-2 contarif" style="
+    width: 20%;
+">
+                <div class="advent-block viravn-cen advent-block-bor">
+                    <ul>
+                        <li>
+                            <h3>25% за 5 дней</h3>
+
+                            <span>5%
+                                                    <h4>
+                                                        в день                                                     </h4></span>
+
+                            <p>Мин. сумма: 1000 руб</p>
+                            <p>Макс. сумма:: 10000 руб</p>
+                                                                                            <p>Срок депозита: 5 дней</p>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="col-md-2 contarif" style="
+    width: 20%;
+">
+                <div class="advent-block viravn-cen advent-block-bor">
+                    <ul>
+                        <li>
+                            <h3>42% за 6 дней</h3>
+
+                            <span>7%
+                                                    <h4>
+                                                        в день                                                     </h4></span>
+
+                            <p>Мин. сумма: 5000 руб</p>
+                            <p>Макс. сумма:: 20000 руб</p>
+                                                                                            <p>Срок депозита: 6 дней</p>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="col-md-2 contarif" style="
+    width: 20%;
+">
+                <div class="advent-block viravn-cen advent-block-bor">
+                   <ul>
+                        <li>
+                            <h3>70% за 7 дней</h3>
+
+                            <span>10%
+                                                    <h4>
+                                                        в день                                                     </h4></span>
+
+                            <p>Мин. сумма: 5500 руб</p>
+                            <p>Макс. сумма:: 25000 руб</p>
+                                                                                            <p>Срок депозита: 7 дней</p>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="col-md-2 contarif" style="
+    width: 20%;
+">
+                <div class="advent-block viravn-cen advent-block-bor">
+                    <ul>
+                        <li>
+                            <h3>120% за 8 дней</h3>
+
+                            <span>15%
+                                                    <h4>
+                                                        в день                                                     </h4></span>
+
+                            <p>Мин. сумма: 7000 руб</p>
+                            <p>Макс. сумма:: 30000 руб</p>
+                                                                                            <p>Срок депозита: 8 дней</p>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+
+			  
+
+
+
+
+
+
+
+
+
+
+
+			  
+			  
+           
+            
+            <div class="clearfix"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="clearfix"></div>
+            <br>
+            <br>
+            <div class="devider"></div>
+        </div>
+    </div>
+</section>
+<section class="main2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+               <img src="/cup.gif" height="350" width="350" style="
+    margin-top: 37px;
+">
+            </div>
+            <div class="col-md-9">
+                <div class="block-on-main2">
+                    <h3 class="main2-title"><span><abbr>Коротко о </abbr> Favorit Sports</span></h3>
+                    <div class="clearfix"></div>
+                    <br/>
+                    Эксперты "Favorit Sports" еженедельно анализируют свыше 100 футбольных, баскетбольных и хоккейных матчей, теннисных и волейбольных турниров по всему миру, и отбирают самые выгодные ставки с наибольшей вероятностью прохода. Как результат – мы постоянно увеличиваем прибыль для тех, кто вкладывает деньги в нашу деятельность. 
+Мы работаем по условиям доверительного управления финансами как с небольшими инвестициями от $5, так и с клиентами, которые инвестируют крупные суммы. Все депозиты объединяются в общий пул, после чего распределяются по алгоритмам на различные ставки, и после получения прибыли каждый инвестор получает свою долю пропорционально своему вкладу. При этом партнерам "Favorit Sports" не нужно рисковать, делая ставки самостоятельно – весь процесс автоматизирован, и они получают только прибыль удобным способом. Букмекерские конторы, с которыми мы работаем, известны во всем мире – William Hill, Betfair, Pinnacle, 1xBet, Parimatch и другие. Грамотное распределение финансов между ними позволяет получать наибольшую выгоду и страховать ставки для того, чтобы сводить все потенциальные риски к минимуму. Минимальная комиссия и высокая прибыль, которую приносит "Favorit Sports", позволяет в полной мере насладиться победой! 
+                    </p>
+                    <p align="justify">
+                         При этом партнерам "Favorit Sports" не нужно рисковать, делая ставки самостоятельно – весь процесс автоматизирован, и они получают только прибыль удобным способом. Букмекерские конторы, с которыми мы работаем, известны во всем мире – William Hill, Betfair, Pinnacle, 1xBet, Parimatch и другие. Грамотное распределение финансов между ними позволяет получать наибольшую выгоду и страховать ставки для того, чтобы сводить все потенциальные риски к минимуму. Минимальная комиссия и высокая прибыль, которую приносит "Favorit Sports", позволяет в полной мере насладиться победой! 
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br/>
+            <br/>
+            <div class="col-md-9">
+                <div class="block-on-main2">
+                     <h3 class="main2-title main2-title-1"><span><abbr>Партнерская </abbr> Программа</span></h3>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <br/>
+                    <p align="justify">
+                       Наши специалисты разрботали партнерскую программу, участие в которой не требует от инвестора иметь активный депозит в проекте. Достаточно пригласить инвестора в проект, который откроет депозит. Вы будете получать одноразовую выплату 5%-3%-1% от депозита реферала соотвественно уровню, сразу на ваш баланс, который можно сразу вывести, либо инвестировать.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+               <img src="images/main1-img-2.png" style="margin-left:-50px;height: 230px;">
+            </div>
+            <div class="clearfix"></div>
+            <br/>
+            <div class="clearfix"></div>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</section>
+<section class="main-why">
+    <div class="container">
+        <div class="row">
+            <h2 class='how-title'>
+                <span>Наши преимущества</span>
+                <center>
+                    <p style='font-size:13px; padding-top:20px;'>
+                        Чем мы лучше, надежнее и эффективнее:
+                    </p>
+                </center>
+            </h2>
+            <div class="clearfix"></div>
+            <div class="col-md-4">
+                <div class="block-why-item">
+                    <span>Всегда <abbr> Актуален</abbr></span>
+                    <p>
+                        Мы постоянно обновляем нашу техническую базу, следим за новостями в индустрии, следим за трансферами и постоянно анализируем;
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-why-item block-why-item-middle block-why-item-1" style='margin-top:25px;'>
+                    <span>Профессиональная <abbr>Команда</abbr></span>
+                    <p>
+                        Высококачественные технические инструменты, эксперты со знаниями и опытом в области Интернета
+                         технологий, цифрового маркетинга и соц. исследованиий
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-why-item block-why-item-2">
+                    <span>Удобный <abbr>Интерфейс</abbr></span>
+                    <p>
+                        Нашими специалистами был разработан удобный интерфейс, пользование которой не требует особых знаний в программировании
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br/>
+            <div class="col-md-4">
+                <div class="block-why-item block-why-item-3">
+                    <span>Проходимость <abbr>Ставок</abbr></span>
+                    <p>
+                        Наш алгоритм ставок и диверсификации по видам спорта, приносит довольно хороший результат. Проходимость всех ставок до 92%
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-why-item block-why-item-middle block-why-item-4" style='margin-top:25px;'>
+                    <span>Инстант <abbr>Выплаты</abbr></span>
+                    <p>
+                        После начисления прибыли на баланс, всю сумму можно сразу вывести на свой персональный номер счета, либо реинвестировать. Моментальная обработка всех заявок
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-why-item block-why-item-5">
+                    <span>Онлайн <abbr>Консультация</abbr></span>
+                    <p>
+                        При возникновении вопросов, технический отдел Favorit Sports всегда готов помочь Вам. При возникновении трудностей, пишите нам на почту <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="02717772726d7076424463746d706b762f51726d7076712c72706d">[email&#160;protected]</a>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</section>
+<section class="main3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Самые прибыльные <br/> ставки на спорт.<br/>Минимальные риски, максимальная прибыль.</p>
+               
+
+
+
+	<a href="/deposit" class="btn btn-3"><span class="round">Вложить</span></a>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main4">
+    <div class="container">
+        <div class="row">
+            <h3 class="main4-subtitle"><span><abbr></abbr> Favorit Sports</span></h3>
+            <div class="clearfix"></div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="col-md-7">
+                <div class="block-coming-soon"></div>
+            </div>
+            <div class="col-md-5">
+                <p style="text-align: justify">
+                   <b>Лидер в мире ставок.</b>
+                   Наша компания является официально зарегистрированной в Доминниканской республике и структурно представляет собой частную коммерческую организацию с привлеченным частным капиталом, все наши усилия сосредоточены, в первую очередь, на получении максимально возможной прибыли из расчета на единицу инвестированных средств. 
+
+
+
+                </p>
+                <p  style="text-align: justify">
+                    Многолетний опыт беттинга, основанный на безупречной работе каждого сотрудника компании, дает нам возможность правильно распределять свои усилия, максимально эффективно используя доступные нам ресурсы. 
+Компания является собственником уникальных программ, способных выявлять аномально высокие или аномально низкие коэффициенты по признакам, которые складываются из совершенно незаметных нюансов 
+                </p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="arrow-big"></div>
+        </div>
+    </div>
+</section>
+
+
+	<section class="main5">
+	<div class="container" style="width:912px;"><br><br><br>
+		<div class="row">
+			<h3 class="main4-subtitle main4-subtitle-1"><span><abbr>Платежные </abbr> системы:</span></h3>
+			<div class="clearfix"></div>
+			<br/>
+			<br/>
+			<br/>
+
+<center><a href="https://qiwi.com/main" target="_blank"><img src="/qiwi.png" height="100" width="170"></a>
+					
+						<a target="_blank" href="https://payeer.com/"><img src="images/client-list/3.png" height="100" width="170"></a></center>
+
+
+			<div class="block-psys">
+				<ul class="paysys-list">
+					<!-- <li>
+						<a href="https://bitcoin.org/" target="_blank"><img src="images/client-list/1.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://ethereum.org" target="_blank"><img src="images/client-list/6.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://perfectmoney.is" target="_blank"><img src="images/client-list/2.png" height="100" width="170"></a>
+					</li> -->
+					<li>
+						
+					</li>
+					<!-- <li>
+						<a href="https://ethermine.org/" target="_blank"><img src="images/client-list/5.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://bitcoin.org/" target="_blank"><img src="images/client-list/1.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://ethereum.org" target="_blank"><img src="images/client-list/6.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://advcash.com" target="_blank"><img src="images/client-list/7.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://perfectmoney.is" target="_blank"><img src="images/client-list/2.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a target="_blank" href="https://payeer.com/"><img src="images/client-list/3.png" height="100" width="170"></a>
+					</li>
+					<li>
+						<a href="https://ethermine.org/" target="_blank"><img src="images/client-list/5.png" height="100" width="170"></a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		</section>
+	<section class="footer">
+		<a class="to-top "></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="clearfix"></div>
+					<div class="col-md-3">
+						<div class="block-footer-menu">
+							<ul>
+								
+								<li><a href="/">Главная</a></li>
+						<li><a href="/about">О Нас</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block-footer-menu block-dark">
+							<ul>
+								<li><a href="/news">Новости</a></li>
+						<li><a href="/rules">Правила</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block-footer-menu ">
+							<ul>
+														<li><a href="/faq">FAQ</a></li>
+						<li><a href="/contacts">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block-footer-menu block-dark">
+							<ul>
+								 
+	<li><a  href="/registration">Регистрация</a></li>
+						<li><a  href="/login">Авторизация</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<br/>
+					<br/>
+					<div class="col-md-3">
+						<div class="logo-footer">
+							<p class="copyright">
+								© 2019 favorit-sports.pro <small></small>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="social-links social-links-1">
+
+<a href="https://vk.com/club185638432" target="_blank"><img src="/vk.png" style="
+    position: relative;
+    top: 15px;
+"></a>
+
+<a href="https://t.me/" target="_blank"><img src="/instagram.png" style="
+    position: relative;
+    top: 15px;
+"></a>
+
+
+
+							<!-- <a href="https://twitter.com/" target="_blank" class="tw"><span></span></a>
+							<a href="https://plus.google.com/" target="_blank" class="skype"><span></span></a> -->
+						</div>
+						<!-- <div class="phone-block phone-block-footer ">
+							<i></i>
+							<span>+44</span>
+							<small>20</small>
+						</div> -->
+						<div class="phone-block block-mail phone-block-footer">
+							<i></i>
+							<a>support<abbr>@</abbr>Favorit-sports.pro</a>
+						</div>
+						<div class="clearfix"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+		</html>
