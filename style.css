@@ -13,9 +13,18 @@ body{
 }
 
 .container {
+  text-align: center;
   width: 100%;
   max-width: 1200px;
   margin: 50px auto ;
+}
+
+.icons {
+  text-align: center;
+  max-width: 670px;
+  margin: 0 auto;
+
+
 }
 
 
