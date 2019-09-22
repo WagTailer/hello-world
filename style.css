@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  font-family: "bauhaus93";
+  font-family: "BAUHS93";
   background: black;
   color: white;
   font-size: 90px;
@@ -23,9 +23,9 @@ body{
 
 
 @font-face {
-  font-family: "bauhaus93";
-  src:url("BAUHS93.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  	font-family: 'BAUHS93';
+  	src: url('./BAUHS93.eot');
+  	src: local('BAUHS93'), url('fonts/BAUHS93.woff') format('woff'), url('fonts/BAUHS93.ttf') format('truetype');
+
 
   }
